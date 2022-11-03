@@ -20,6 +20,6 @@ class N8n < Formula
   end
 
   test do
-    raise "Test not implemented."
+    assert_match /\d\.\d+\.\d/, shell_output("#{bin}/n8n -v").strip
   end
 end
